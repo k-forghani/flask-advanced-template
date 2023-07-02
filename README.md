@@ -2,7 +2,9 @@
 
 ## Introduction
 
-This is an advanced Flask web application template.
+This is an advanced Flask web application template, equipped with various Flask extensions. It uses *Bootstrap* as the frontend framework customized for right-to-left languages.
+
+I welcome contributions and stars to improve and support this repository!
 
 ## Setting up
 
@@ -50,6 +52,12 @@ flask users create-admin USERNAME EMAIL PASSWORD
 | rcssmin | 1.1.1 | CSS Minifier |
 | python-dotenv | 1.0.0 | Read key-value pairs from a `.env` file and set them as environment variables |
 | email-validator | 2.0.0.post2 | A robust email address syntax and deliverability validation library |
+
+### Web Frameworks
+
+| Framework | Version | Description |
+| --- | --- | --- |
+| Bootstrap RTL | 5.3 | Powerful, extensible, and feature-packed frontend toolkit
 
 ## Contributing
 
