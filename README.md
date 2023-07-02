@@ -13,7 +13,9 @@ This is an advanced Flask web application template.
 | Flask | 2.3.2 | A simple framework for building complex web applications |
 | Flask-Assets | 2.0 | Asset management for Flask, to compress and merge CSS and Javascript files |
 | jsmin | 3.0.1 | JavaScript minifier |
+| rcssmin | 1.1.1 | CSS Minifier |
 | python-dotenv | 1.0.0 | Read key-value pairs from a `.env` file and set them as environment variables |
+| MongoEngine | 0.27.0 | a Python Object-Document Mapper for working with MongoDB |
 
 ## Contributing
 

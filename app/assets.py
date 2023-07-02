@@ -8,7 +8,7 @@ def compile_static_assets (assets):
     bundles = {
         "framework_css": Bundle(
             "src/css/bootstrap.rtl.css",
-            # filters = "cssmin",
+            filters = "rcssmin",
             output = "dist/css/framework.css",
             extra = {"rel": "stylesheet/css"}
         ),
@@ -19,7 +19,7 @@ def compile_static_assets (assets):
         ),
         "main_css": Bundle(
             "src/css/main.css",
-            # filters = "cssmin",
+            filters = "rcssmin",
             output = "dist/css/main.css",
             extra = {"rel": "stylesheet/css"}
         ),
@@ -30,13 +30,13 @@ def compile_static_assets (assets):
         ),
         "fonts_css": Bundle(
             "src/css/fonts.css",
-            # filters = "cssmin",
+            filters = "rcssmin",
             output = "dist/css/fonts.css",
             extra = {"rel": "stylesheet/css"}
         ),
         "home_css": Bundle(
             "home_bp/css/home.css",
-            # filters = "cssmin",
+            filters = "rcssmin",
             output = "dist/css/home.css",
             extra = {"rel": "stylesheet/css"}
         )
