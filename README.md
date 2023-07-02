@@ -4,7 +4,27 @@
 
 This is an advanced Flask web application template.
 
-## Installation
+## Setting up
+
+On Ubuntu operating system, you can simply run `setup.sh` to install everything needed to run the web application:
+
+```bash
+./setup.sh
+```
+
+Then, you can run the web application by running `run.sh`:
+
+```bash
+./run.sh
+```
+
+**Note**: In order to modify the config of the web application, you can create a `.env` file in the root directory as explained [here](https://www.npmjs.com/package/dotenv).
+
+**Note**: You can modify admin properties by editing the second line of `run.sh` before running:
+
+```bash
+flask users create-admin USERNAME EMAIL PASSWORD
+```
 
 ## Requirements
 
