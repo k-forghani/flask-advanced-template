@@ -8,17 +8,28 @@ This is an advanced Flask web application template.
 
 ## Requirements
 
+### Overall Packages
+
+| Package | Version | Description |
+| --- | --- | --- |
+| python3 | 3.11.2 | A programming language that lets you work quickly and integrate systems more effectively |
+| python3-pip | 23.0.1 | The PyPA recommended tool for installing Python packages |
+| python3-venv | 3.11.2-1 | Supports creating lightweight virtual environments |
+| mongod | 6.0.7 | A source-available cross-platform document-oriented database program
+
+### Python Packages
+
 | Package | Version | Description |
 | --- | --- | --- |
 | Flask | 2.3.2 | A simple framework for building complex web applications |
 | Flask-Assets | 2.0 | Asset management for Flask, to compress and merge CSS and Javascript files |
 | Flask-WTF | 1.1.1 | Form rendering, validation, and CSRF protection for Flask with WTForms |
 | Flask-Login | 0.6.2 | User authentication and session management for Flask |
-| MongoEngine | 0.27.0 | a Python Object-Document Mapper for working with MongoDB |
+| MongoEngine | 0.27.0 | A Python Object-Document Mapper for working with MongoDB |
 | jsmin | 3.0.1 | JavaScript minifier |
 | rcssmin | 1.1.1 | CSS Minifier |
 | python-dotenv | 1.0.0 | Read key-value pairs from a `.env` file and set them as environment variables |
-| email-validator | 2.0.0.post2 | A robust email address syntax and deliverability validation library 
+| email-validator | 2.0.0.post2 | A robust email address syntax and deliverability validation library |
 
 ## Contributing
 
