@@ -12,14 +12,17 @@ This is an advanced Flask web application template.
 | --- | --- | --- |
 | Flask | 2.3.2 | A simple framework for building complex web applications |
 | Flask-Assets | 2.0 | Asset management for Flask, to compress and merge CSS and Javascript files |
+| Flask-WTF | 1.1.1 | Form rendering, validation, and CSRF protection for Flask with WTForms |
+| Flask-Login | 0.6.2 | User authentication and session management for Flask |
+| MongoEngine | 0.27.0 | a Python Object-Document Mapper for working with MongoDB |
 | jsmin | 3.0.1 | JavaScript minifier |
 | rcssmin | 1.1.1 | CSS Minifier |
 | python-dotenv | 1.0.0 | Read key-value pairs from a `.env` file and set them as environment variables |
-| MongoEngine | 0.27.0 | a Python Object-Document Mapper for working with MongoDB |
+| email-validator | 2.0.0.post2 | A robust email address syntax and deliverability validation library 
 
 ## Contributing
 
-Please refer to [CONTRIBUTING.md](/CONTRIBUTING.md) for details on the code of conduct, and the process for submitting pull requests.
+I welcome contributions! Please refer to [CONTRIBUTING.md](/CONTRIBUTING.md) for details on the code of conduct, and the process for submitting pull requests.
 
 ## Founder
 

@@ -20,3 +20,7 @@ class Config:
     STATIC_FOLDER = "static"
     TEMPLATES_FOLDER = "templates"
     COMPRESSOR_DEBUG = environ.get("COMPRESSOR_DEBUG", True)
+
+    MONGODB_DB = environ.get("MONGODB_DB", "mizan")
+    MONGODB_HOST = environ.get("MONGODB_HOST", "localhost")
+    MONGODB_PORT = int(environ.get("MONGODB_PORT", 27017))

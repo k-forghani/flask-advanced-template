@@ -1,0 +1,56 @@
+{% extends "base.jinja2" %}
+
+{% block content %}
+  <div class="container d-grid py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header clearfix">
+            <h4 class="card-title float-start mt-2">ثبت‌نام</h4>
+            <a href="/panel/login" class="float-end btn btn-outline-primary mt-1" role="button">ورود به حساب کاربری</a>
+          </div>
+          <div class="card-body">
+            <form class="" action="" method="post" novalidate>
+              {{ form.hidden_tag() }}
+              <div class="mb-3">
+                  {{ form.username.label(class_="form-label") }}
+                  {{ form.username(class_="form-control is-invalid" if form.username.errors else "form-control") }}
+                  {% for error in form.username.errors %}
+                    <div class="invalid-feedback">{{ error }}</div>
+                  {% endfor %}
+              </div>
+              <div class="mb-3">
+                  {{ form.email.label(class_="form-label") }}
+                  {{ form.email(class_="form-control is-invalid" if form.email.errors else "form-control") }}
+                  {% for error in form.email.errors %}
+                    <div class="invalid-feedback">{{ error }}</div>
+                  {% endfor %}
+              </div>
+              <div class="mb-3">
+                  {{ form.password.label(class_="form-label") }}
+                  {{ form.password(class_="form-control is-invalid" if form.password.errors else "form-control") }}
+                  {% for error in form.password.errors %}
+                    <div class="invalid-feedback">{{ error }}</div>
+                  {% endfor %}
+              </div>
+              <div class="mb-3">
+                  {{ form.confirm.label(class_="form-label") }}
+                  {{ form.confirm(class_="form-control is-invalid" if form.confirm.errors else "form-control") }}
+                  {% for error in form.confirm.errors %}
+                    <div class="invalid-feedback">{{ error }}</div>
+                  {% endfor %}
+              </div>
+              <div class="mb-3 form-check">
+                {{ form.accept_tos(class_="form-check-input is-invalid" if form.accept_tos.errors else "form-check-input") }} {{ form.accept_tos.label(class_="form-check-label") }}
+                {% for error in form.accept_tos.errors %}
+                  <div class="invalid-feedback">{{ error }}</div>
+                {% endfor %}
+              </div>
+              <div class="mb-2">{{ form.submit(class_="btn btn-primary float-end") }}</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

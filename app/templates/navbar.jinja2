@@ -22,6 +22,17 @@
           </li>
         {% endfor %}
       </ul>
+      {% if current_user.is_authenticated %}
+        <div class="d-grid gap-2 d-md-block">
+          <a href="#" class="btn btn-primary" role="button">پنل کاربری</a>
+          <a href="{{ url_for('panel_bp.logout') }}" class="btn btn-secondary" role="button">خروج</a>
+        </div>
+      {% else %}
+        <div class="d-grid gap-2 d-md-block">
+          <a href="{{ url_for('panel_bp.signup') }}" class="btn btn-primary" role="button">ثبت‌نام</a>
+          <a href="/panel/login" class="btn btn-secondary" role="button">ورود به حساب کاربری</a>
+        </div>
+      {% endif %}
     </div>
   </div>
 </nav>

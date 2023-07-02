@@ -1,0 +1,48 @@
+{% extends "base.jinja2" %}
+
+{% block content %}
+  <div class="container d-grid py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header clearfix">
+            <h4 class="card-title float-start mt-2">ورود به حساب کاربری</h4>
+            <a href="/panel/signup" class="float-end btn btn-outline-primary mt-1" role="button">ثبت‌نام</a>
+          </div>
+          <div class="card-body">
+            {% with messages = get_flashed_messages() %}
+              {% for message in messages %}
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              {% endfor %}
+            {% endwith %}
+
+            <form class="" action="" method="post" novalidate>
+              {{ form.hidden_tag() }}
+              <div class="mb-3">
+                  {{ form.username.label(class_="form-label") }}
+                  {{ form.username(class_="form-control is-invalid" if form.username.errors else "form-control") }}
+                  {% for error in form.username.errors %}
+                    <div class="invalid-feedback">{{ error }}</div>
+                  {% endfor %}
+              </div>
+              <div class="mb-3">
+                  {{ form.password.label(class_="form-label") }}
+                  {{ form.password(class_="form-control is-invalid" if form.password.errors else "form-control") }}
+                  {% for error in form.password.errors %}
+                    <div class="invalid-feedback">{{ error }}</div>
+                  {% endfor %}
+              </div>
+              <div class="mb-3 form-check">
+                {{ form.remember_me(class_="form-check-input") }} {{ form.remember_me.label(class_="form-check-label") }}
+              </div>
+              <div class="mb-2">{{ form.submit(class_="btn btn-primary float-end") }}</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
