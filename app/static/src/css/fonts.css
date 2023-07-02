@@ -1,0 +1,65 @@
+@font-face {
+  font-family: Vazir;
+  src: url("/static/fonts/Vazir-Regular.eot");
+  src: url("/static/fonts/Vazir-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/static/fonts/Vazir-Regular.woff2") format("woff2"),
+    url("/static/fonts/Vazir-Regular.woff") format("woff"),
+    url("/static/fonts/Vazir-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("/static/fonts/Vazir-Bold.eot");
+  src: url("/static/fonts/Vazir-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/static/fonts/Vazir-Bold.woff2") format("woff2"),
+    url("/static/fonts/Vazir-Bold.woff") format("woff"),
+    url("/static/fonts/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("/static/fonts/Vazir-Black.eot");
+  src: url("/static/fonts/Vazir-Black.eot?#iefix") format("embedded-opentype"),
+    url("/static/fonts/Vazir-Black.woff2") format("woff2"),
+    url("/static/fonts/Vazir-Black.woff") format("woff"),
+    url("/static/fonts/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("/static/fonts/Vazir-Medium.eot");
+  src: url("/static/fonts/Vazir-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/static/fonts/Vazir-Medium.woff2") format("woff2"),
+    url("/static/fonts/Vazir-Medium.woff") format("woff"),
+    url("/static/fonts/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("/static/fonts/Vazir-Light.eot");
+  src: url("/static/fonts/Vazir-Light.eot?#iefix") format("embedded-opentype"),
+    url("/static/fonts/Vazir-Light.woff2") format("woff2"),
+    url("/static/fonts/Vazir-Light.woff") format("woff"),
+    url("/static/fonts/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("/static/fonts/Vazir-Thin.eot");
+  src: url("/static/fonts/Vazir-Thin.eot?#iefix") format("embedded-opentype"),
+    url("/static/fonts/Vazir-Thin.woff2") format("woff2"),
+    url("/static/fonts/Vazir-Thin.woff") format("woff"),
+    url("/static/fonts/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }} | {{ subtitle }}</title>
+    {% assets "fonts_css" %}
+      <link rel="stylesheet" href="{{ ASSET_URL }}" type="text/css">
+    {% endassets %}
+    {% assets "framework_css" %}
+      <link rel="stylesheet" href="{{ ASSET_URL }}" type="text/css">
+    {% endassets %}
+    {% assets "main_css" %}
+      <link rel="stylesheet" href="{{ ASSET_URL }}" type="text/css">
+    {% endassets %}
+    {% block pagestyles %}{% endblock %}
+  </head>
+  <body class="{{ page }}">
+    {% include "navbar.jinja2" %}
+    {% block content %}{% endblock %}
+    {% include "footer.jinja2" %}
+
+    {% assets "framework_js" %}
+      <script src="{{ ASSET_URL }}" charset="utf-8"></script>
+    {% endassets %}
+    {% assets "main_js" %}
+      <script src="{{ ASSET_URL }}" charset="utf-8"></script>
+    {% endassets %}
+    {% block pagescripts %}{% endblock %}
+  </body>
+</html>

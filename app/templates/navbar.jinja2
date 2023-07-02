@@ -1,0 +1,27 @@
+{% set navs = [
+    (url_for("home_bp.home"), "home", "صفحه اصلی"),
+    ("/help", "help", "راهنما"),
+    ("/terms", "terms", "قوانین و مقررات"),
+    ("/contact", "contact", "ارتباط با ما"),
+    ("/about", "about", "درباره ما")
+] %}
+
+{% set page = page|default("home") %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- navbar-dark bg-primary -->
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ url_for('home_bp.home') }}">میزان</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle Navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        {% for href, id, text in navs %}
+          <li class="nav-item">
+            <a class="nav-link{% if id == page %} active{% endif %}" aria-current="{{ id }}" href="{{ href|e }}">{{ text|e }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

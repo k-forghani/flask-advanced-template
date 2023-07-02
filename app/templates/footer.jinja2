@@ -1,0 +1,39 @@
+{% set links = [
+    (url_for("home_bp.home"), "home", "صفحه اصلی"),
+    ("/help", "help", "راهنما"),
+    ("/terms", "terms", "قوانین و مقررات")
+] %}
+
+<div class="bg-light">
+  <div class="container d-grid py-3">
+    <div class="row">
+      <div class="col py-3 px-4">
+        <h3 class="mb-3">پیوندها</h3>
+        <ul>
+          {% for href, id, text in links %}
+          <li><a class="text-decoration-none" href="{{ href|e }}">{{ text|e }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col py-3 px-4">
+        <h3 class="mb-3">درباره ما</h3>
+        <p class="text-justify">میزان قالبی پیشرفته و متن‌باز برای فلسک است که تحت مجوز آزاد برای استفاده رایگان منتشر شده است. برای اطلاعات بیشتر می‌توانید به مخزن پروژه مراجعه نمایید.</p>
+      </div>
+      <div class="col py-3 px-4">
+        <h3 class="mb-3">ارتباط با ما</h3>
+        <p class="text-justify">
+          <span>پست الکترونیک: mizan@example.com</span><br>
+          <span>شماره تماس: ۰۱۲۳۴۵۶۷۸۹</span><br>
+          <span>دورنگار: ۰۱۲۳۴۵۶۷۸۹</span><br>
+          <span>نشانی: استان تهران، شهر تهران</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-primary">
+  <div class="container py-3">
+    <p class="text-center text-white m-0">© میزان ۱۴۰۲ | استفاده تحت مجوز قالب مجاز است.</p>
+  </div>
+</div>

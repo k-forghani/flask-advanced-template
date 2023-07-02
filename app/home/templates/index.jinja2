@@ -1,0 +1,16 @@
+{% extends "base.jinja2" %}
+
+{% block pagestyles %}
+  {% assets "home_css" %}
+    <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css">
+  {% endassets %}
+{% endblock %}
+
+{% block content %}
+  <div class="p-5 bg-light text-light" style="background-image: url('{{ url_for('home_bp.static', filename='images/heading.jpg') }}'); background-size: cover;">
+    <div class="container-fluid py-5 text-center">
+      <h1 class="fw-bold">{{ title }}</h1>
+      <p class="fs-4">{{ subtitle }}</p>
+    </div>
+  </div>
+{% endblock %}
